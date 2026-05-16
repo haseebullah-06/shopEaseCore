@@ -29,7 +29,7 @@ public class PricingEngine {
     }
 
     public double calculateShipping (ArrayList<CartItem> items) {
-        double subtotal = calculateShipping(items);
+        double subtotal = calculateSubTotal(items);
         if (subtotal >= FREE_SHIP_ABOVE) {
             System.out.println("[Pricing] Free Shipping! Order above Rs." + FREE_SHIP_ABOVE );
             return 0;
